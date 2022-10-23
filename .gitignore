@@ -8,9 +8,6 @@ yarn-error.log*
 # Dependency directory
 node_modules/
 
-# Build directory
-build/
-
 # Misc
 .DS_Store
 .DS_Store?

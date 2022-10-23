@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>{ Project Name }</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="game-holder">
+			<section class="player player2" id="player-up">
+				<div class="player__info">
+					<figure class="player__image">
+						<img src="./assets/images/temp/brann/brannport.png" alt="" width="480" height="423">
+					</figure><!-- /.char-1-img -->
+
+					<ul class="player__stats">
+						<li class="hp"> HP: 10 </li>
+						
+						<li class="armor"> Armor: 10 </li>
+						
+						<li class="movement"> Movement: 3 </li>
+						
+						<li class="crystals"> Crystals: 2 </li>
+					</ul><!-- /.stats1 -->
+
+					<ul class="player__skills">
+						<li>
+							<img src="./assets/images/temp/brann/brannskill1.png" alt="" width="386" height="427">
+
+							<img src="./assets/images/temp/brann/skill1.png" alt="" width="754" height="1050">
+						</li>
+						
+						<li>
+							<img src="./assets/images/temp/brann/brannskill2.png" alt="" width="386" height="427">
+
+							<img src="./assets/images/temp/brann/skill2.png" alt="" width="754" height="1050">
+						</li>
+						
+						<li>
+							<img src="./assets/images/temp/brann/brannskill3.png" alt="" width="386" height="427">
+
+							<img src="./assets/images/temp/brann/skill3.png" alt="" width="754" height="1050">
+						</li>
+					</ul><!-- /.char-skills -->
+				</div>
+
+				<ul class="player__actions">
+					<li class="turn1">
+						<div class="action normal"></div>
+
+						<div class="action extra"></div>
+					</li>
+
+					<li class="turn2">
+						<div class="action normal"></div>
+
+						<div class="action extra"></div>
+					</li>
+
+					<li class="turn3">
+						<div class="action normal"></div>
+
+						<div class="action extra"></div>
+					</li>
+				</ul>
+
+				<div class="player__basic-actions"></div>
+			</section><!-- /.player player2 -->
+
+			<section class="gameboard">
+				<p id="round">Round : 1</p>
+
+				<div class="gamemap">
+					<figure class="gamemap__image">
+						<img src="./assets/images/temp/map.png" alt="" width="8405" height="4822">
+
+						<img src="./assets/images/temp/map-walls.png" style="z-index: 10; pointer-events: none;" alt="" width="8405" height="4822">
+					</figure><!-- /.gamemap__image -->
+
+					<table>
+						<tr>
+							<td id="00" class="tile"></td>
+
+							<td id="01" class="tile"></td>
+
+							<td id="02" class="tile"></td>
+
+							<td id="03" class="tile"></td>
+
+							<td id="04" class="tile"></td>
+
+							<td id="05" class="tile"></td>
+
+							<td id="06" class="tile"></td>
+
+							<td id="07" class="tile"></td>
+						</tr>
+
+						<tr>
+							<td id="10" class="tile"></td>
+
+							<td id="11" class="tile"></td>
+
+							<td id="12" class="tile"></td>
+
+							<td id="13" class="tile"></td>
+
+							<td id="14" class="tile"></td>
+
+							<td id="15" class="tile"></td>
+
+							<td id="16" class="tile"></td>
+
+							<td id="17" class="tile"></td>
+						</tr>
+
+						<tr>
+							<td id="20" class="tile"></td>
+
+							<td id="21" class="tile"></td>
+
+							<td id="22" class="tile"></td>
+
+							<td id="23" class="tile"></td>
+
+							<td id="24" class="tile"></td>
+
+							<td id="25" class="tile"></td>
+
+							<td id="26" class="tile"></td>
+
+							<td id="27" class="tile"></td>
+						</tr>
+
+						<tr>
+							<td id="30" class="tile"></td>
+
+							<td id="31" class="tile"></td>
+
+							<td id="32" class="tile"></td>
+
+							<td id="33" class="tile"></td>
+
+							<td id="34" class="tile"></td>
+
+							<td id="35" class="tile"></td>
+
+							<td id="36" class="tile"></td>
+
+							<td id="37" class="tile"></td>
+						</tr>
+					</table>
+				</div><!-- /.gameborad -->
+
+				<p id="turn">Turn : 1</p>
+			</section>
+
+			<section class="player player1" id="player-down">
+				<div class="player__info">
+					<figure class="player__image">
+						<img src="./assets/images/temp/sola/solaport.png" alt="" width="480" height="423">
+					</figure><!-- /.char-1-img -->
+
+					<ul class="player__stats">
+						<li class="hp"> HP: 10 </li>
+						
+						<li class="armor"> Armor: 10 </li>
+						
+						<li class="movement"> Movement: 3 </li>
+						
+						<li class="crystals"> Crystals: 2 </li>
+					</ul><!-- /.stats1 -->
+
+					<ul class="player__skills">
+						<li>
+							<img src="./assets/images/temp/sola/solaskill1.png" alt="" width="386" height="427">
+
+							<img src="./assets/images/temp/sola/skill1.png" alt="" width="754" height="1050">
+						</li>
+						
+						<li>
+							<img src="./assets/images/temp/sola/solaskill2.png" alt="" width="386" height="427">
+
+							<img src="./assets/images/temp/sola/skill2.png" alt="" width="754" height="1050">
+						</li>
+						
+						<li>
+							<img src="./assets/images/temp/sola/solaskill3.png" alt="" width="386" height="427">
+
+							<img src="./assets/images/temp/sola/skill3.png" alt="" width="754" height="1050">
+						</li>
+					</ul><!-- /.char-skills -->
+				</div>
+
+				<ul class="player__actions">
+					<li class="turn1">
+						<div class="action normal"></div>
+
+						<div class="action extra"></div>
+					</li>
+
+					<li class="turn2">
+						<div class="action normal"></div>
+
+						<div class="action extra"></div>
+					</li>
+
+					<li class="turn3">
+						<div class="action normal"></div>
+
+						<div class="action extra"></div>
+					</li>
+				</ul>
+
+				<div class="player__basic-actions">
+					<button class="pass">Pass</button>
+				</div>
+			</section><!-- /.player player1 -->
+		</div><!-- /.gameholder -->
+	</div><!-- /.wrapper -->
+
+	<script src="assets/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bundle.js"></script>
+
+</body>
+</html>
