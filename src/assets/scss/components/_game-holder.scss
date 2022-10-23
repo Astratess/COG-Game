@@ -1,0 +1,100 @@
+/* ------------------------------------------------------------ *\
+	Game-holder
+\* ------------------------------------------------------------ */
+
+.game-holder {
+	height: 100vh;
+	max-width: 100vw;
+	padding-block: 20vh;
+	overflow: hidden;
+}
+
+.gameboard {
+	height: 60vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 20rem;
+	border-top: .2rem solid #e6e6e6;
+	border-bottom: .2rem solid #e6e6e6;
+}
+
+.gamemap {
+	position: relative;
+
+	.gamemap__image {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+}
+
+.tile {
+	position: relative;
+	height: 14vh;
+	width: 14vh;
+	border: .1rem solid #e6e6e6;
+	transition: .5s background-color;
+
+	&:hover {
+		background-color: rgba(#e6e6e6, 0.2);
+	}
+}
+
+.chibi-holder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 1.5s transform;
+	z-index: 2;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		height: 90%;
+	}
+}
+
+.chibi-holder--rotated {
+	img {
+		transform: translate(-50%, -50%) rotateY(180deg);
+	}
+}
+
+.body{
+    z-index: 1;
+}
+
+.hair{
+    z-index: 3;
+}
+
+.dress{
+    z-index: 2
+}
+
+.weapon{
+    z-index: 0;
+}
+
+#brann {
+	.weapon {
+		z-index: 4;
+	}
+}
